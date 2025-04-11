@@ -1,6 +1,8 @@
 package LeetCode;
 
 public class FlowerBed {
+    //Can place flowers
+    //https://leetcode.com/problems/can-place-flowers/description/
     public static int findEmptySpace(int[] arr){
         //first and last
         int emptyCells =0;

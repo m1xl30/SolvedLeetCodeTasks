@@ -4,7 +4,16 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class Interview2803 {
+public class CodingChallenge {
+//    Coding Challenge
+//Please witte a code that will retum a number of all posuthle solutions for solving a puzzle similar to the one presented on the image
+//The blocks are passed to a function as list of strings, where each string defines a block by giving its connection types and 10-indicate an input or output
+//The soluson must start and end with special blocks having START and END connection types (eg. "START,+diamond", diamond, END). All given bricks must be used. If there are no possible solutions to solve the puzzle, return 0
+//There might be multiple bricks of the same shape and they are always distinctive (you can imagine them as having different colours)
+//For bricks with two identical sides (eg
+//"+diamond+diamond") rotating them won't produce two results
+
+
     private static ArrayList<String> toArray(String[] a){
         ArrayList<String> arrayList = new ArrayList<String>();
         Scanner sc = null;

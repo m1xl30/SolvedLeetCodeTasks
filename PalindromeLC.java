@@ -2,7 +2,7 @@ package LeetCode;
 
 public class PalindromeLC {
     public static void main(String[] args) {
-        String p = "pizda";
+        String p = "testing";
         StringBuilder s1 = new StringBuilder(p);
         System.out.println(s1.reverse());
 

@@ -1,6 +1,8 @@
 package LeetCode;
 
-public class Test2503 {
+public class GCD {
+    //Greatest common divisor of Strings
+    //https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75
     private static int gcd(int a,int b) {
         int temp = 0;
         System.out.println(a);

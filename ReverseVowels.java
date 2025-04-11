@@ -3,7 +3,10 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReverseVowels1004 {
+public class ReverseVowels {
+    //Reverse Vowels of a String
+    //https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75
+
     private static boolean isVowel(Character c){
         char[] vowelsArray = {'a','e','i','o','u'};
         for (char q : vowelsArray){

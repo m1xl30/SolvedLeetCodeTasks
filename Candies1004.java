@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Candies1004 {
+    //Kids with the greatest number of candies
+    //https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75
     public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         List<Boolean> kidsBool = new ArrayList<Boolean>();
         int maxCount=0;

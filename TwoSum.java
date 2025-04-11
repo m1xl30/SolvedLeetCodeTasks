@@ -1,12 +1,9 @@
 package LeetCode;
 
-public class Lc1 {
-
-
-    public Lc1() {
-    }
-
-    public int[] twoSum(int[] nums, int target) {
+public class TwoSum {
+    //Two sum
+    //https://leetcode.com/problems/two-sum/description/
+    public static int[] twoSum(int[] nums, int target) {
         int[] result = {0, 0};
         for (int q = 0; q < nums.length; q++) {
             //outside
@@ -24,19 +21,14 @@ public class Lc1 {
             }
         }
         return result;
+    }
 
+    public static void main(String[] args) {
+        int[] nums = {3, 2, 3};
 
-//
-//        for (int i = 1; i < nums.length; i++) {
-//            if(nums[x]+nums[i]==target ){
-//                result[0]=x;
-//                result[1]=i;
-//                return result;
-//            }
-//            else{
-//                x++;
-//            }
-//        }
+        for (int i : twoSum(nums, 6)) {
+            System.out.println(i);
+        }
 
     }
 

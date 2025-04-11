@@ -2,7 +2,7 @@ package LeetCode;
 
 public class PalindromeLC {
     public static void main(String[] args) {
-        String p = "testing";
+        String p = "mama1";
         StringBuilder s1 = new StringBuilder(p);
         System.out.println(s1.reverse());
 
@@ -24,16 +24,16 @@ public class PalindromeLC {
                 secondPart+=intString.charAt(i);
             }
         }
-
-
-        System.out.println(x);
-        System.out.println("first "+firstPart);
-        System.out.println("second "+secondPart);
         StringBuilder sb = new StringBuilder(firstPart);
-        System.out.println("reverse "+sb);
+
+//        System.out.println(x);
+//        System.out.println("first "+firstPart);
+//        System.out.println("second "+secondPart);
+
         if(secondPart.equals(sb.reverse().toString())){
             result=true;
         }
+
         System.out.println(result);
     }
 }

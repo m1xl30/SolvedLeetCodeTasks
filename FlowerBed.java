@@ -38,7 +38,6 @@ public class FlowerBed {
         return emptyCells;
         }
 
-
     public static boolean isTrue(int n, int q){
         boolean tr = false;
         if(n<=q){
@@ -47,7 +46,6 @@ public class FlowerBed {
         System.out.println(tr);
         return tr;
     }
-
 
     public static void main(String[] args) {
         int[] flowerbed = {0,0,1,0,1};

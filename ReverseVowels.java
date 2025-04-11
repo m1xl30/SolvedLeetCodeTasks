@@ -8,7 +8,7 @@ public class ReverseVowels {
     //https://leetcode.com/problems/reverse-vowels-of-a-string/description/?envType=study-plan-v2&envId=leetcode-75
 
     private static boolean isVowel(Character c){
-        char[] vowelsArray = {'a','e','i','o','u'};
+        char[] vowelsArray = {'a','e','i','o','u','A','E','I','O','U'};
         for (char q : vowelsArray){
             if (c==q){
                 return true;
@@ -24,51 +24,37 @@ public class ReverseVowels {
         StringBuilder sb = new StringBuilder(s);
 
         for (int i = 0; i < s.length(); i++) {
-            char currentChar = Character.toLowerCase(s.charAt(i));
-            if(isVowel(currentChar)){
+            if(isVowel(s.charAt(i))){
                 vowels.add(s.charAt(i));
                 indexes.add(i);
-
             }
         }
+        //reversing an array
         vowels = vowels.reversed();
-        System.out.println(s);
-        System.out.println(vowels);
-        System.out.println(indexes);
-
 
         for (int x = 0; x < vowels.size(); x++) {
-            System.out.println(sb);
-            System.out.println("vowel "+vowels.get(x));
-            System.out.println("index "+ indexes.get(x));
-
-            if(x==indexes.size()-1){
-                sb.replace(indexes.get(x),indexes.get(x), vowels.get(x).toString());
-            }
-            else{
-                sb.replace(indexes.get(x),indexes.get(x+1), vowels.get(x).toString());
-            }
-
-            System.out.println("sb "+sb);
+            sb.setCharAt(indexes.get(x), vowels.get(x));
         }
-        s = sb.toString();
-        System.out.println(s);
-        return s;
+
+        //potential encoding to avoid long constraint java error
+//        String value = sb.toString();
+//        String encoder = Base64.getEncoder().encodeToString(value.getBytes(StandardCharsets.UTF_8));
+//        System.out.println(encoder.getBytes(StandardCharsets.UTF_8).toString());
+//        return encoder.getBytes(StandardCharsets.UTF_8).toString();
+
+        System.out.println(sb.toString());
+        return sb.toString();
     }
 
     public static void main(String[] args) {
-        String s = "PidOr";
+        String s = "let's do homework together";
         reverseTheVowels(s);
+
         List<Integer> indexes = new ArrayList<Integer>();
         indexes.add(1);
         indexes.add(2);
         indexes.add(3);
         indexes =  indexes.reversed();
-
-
-        StringBuilder sb = new StringBuilder("pidOr");
-        sb.replace(4,4,"x");
-
 
         //System.out.println(sb.toString());
 
